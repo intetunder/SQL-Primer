@@ -21,29 +21,13 @@ systemctl restart mysqld
 
 
 SQL Statements:
-USE [dbname/dbCustomerInfo]; --- Change to a database you want to do changes to
-
 SHOW DATABASES; --- Show databases
-SHOW FIELDS FROM [tablenam/tblCustomerInfo];
-SHOW TABLES; --- Display all the tables in the current database
-
-CREATE TABLE tblCustomerIDInfo (custID varchar(10) PRIMARY KEY); --- Create a table with a primary key
 CREATE DATABASE [dbname/dbCustomerInfo]; --- Create a new database
+DROP DATABASE [dbname/dbTest]; --- Delete a database and ALL DATA
+USE [dbname/dbCustomerInfo]; --- Change to a database you want to do changes to
+SHOW TABLES; --- Display all the tables in the current database
 CREATE TABLE tblCustomerInfo (CREATE TABLE tblCustomerInfo ([colums]) --- create a table with columns
 example on create table:
 CREATE TABLE tblCustomerInfo (custInfoFirstName varchar(50), custInfoLastName varchar(50),custInfoAddr1 varchar(50),custInfoAddr2 varchar(50),custInfoCityName varchar(50),custInfoState varchar(10),custInfoZipCode varchar(10),custInfoPhone varchar(50));
 CREATE TABLE tblTest(tstCol1 varchar(1),tstCol2 varchar(2));
-
-DROP DATABASE [dbname/dbTest]; --- Delete a database and ALL DATA
 DROP TABLE [dbname/tblTest]; --- Drop/Delete the table
-
-SELECT * FROM [tablename/tblCustomerInfo]; --- show the data in a table
-SELECT custInfoCityName,custInfoState FROM [tablename/tblCustomerInfo]; --- Display only certain fields from a table
-SELECT custInfoLastName FROM tblCustomerInfo WHERE custInfoState='NY'; --- Only display people from the state NY
-SELECT custInfoFirstName ,custInfoLastName FROM tblCustomerInfo WHERE custInfoState='NY'; --- Same as above just with firstname and last name
-SELECT custInfoFirstName ,custInfoLastName FROM tblCustomerInfo WHERE custInfoState LIKE 'NY'; --- LIKE will search for a pattern
-SELECT custInfoFirstName ,custInfoLastName FROM tblCustomerInfo WHERE custInfoState!='NY'; --- not from NY
-
-
-INSERT INTO [dbname] (fields, fields2) VALUE (value_fields, value_fiends2) --- Insert data to the table
-INSERT INTO tblCustomerInfoBkup SELECT * FROM tblCustomerInfo; --- Insert values from one table to another
