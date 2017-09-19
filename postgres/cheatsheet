@@ -1,0 +1,39 @@
+\d     list tables, views, and sequences
+\d     describe table, view, sequence, or index
+\da    list aggregates
+\db    list tablespaces
+\dc    list conversions
+\dC    list casts
+\dd    show object descriptions not displayed elsewhere
+\ddp   list default privileges
+\dD    list domains
+\det   list foreign tables
+\des   list foreign servers
+\deu   list user mappings
+\dew   list foreign-data wrappers
+\dF    list text search configurations
+\dFd   list text search dictionaries
+\dFp   list text search parsers
+\dFt   list text search templates
+\dg    list roles
+\di    list indexes
+\dl    list large objects, same as \lo_list
+\dL    list procedural languages
+\dm    list materialized views
+\dn    list schemas
+\do    list operators
+\dO    list collations
+\dp    list table, view, and sequence access privileges
+\drds  list per-database role settings
+\ds    list sequences
+\dt    list tables
+\dT    list data types
+\du    list roles
+\dv    list views
+\dE    list foreign tables
+\dx    list extensions
+\dy    list event triggers
+\l     list databases
+\sf    show a function's definition
+\z     same as \dp
+

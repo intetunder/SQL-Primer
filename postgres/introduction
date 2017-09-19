@@ -1,1 +1,36 @@
+A organized collection of data.
+Types of Databases:
+Cloud DBS
+Data Warehouse
+Distributed DBS
+Relational DBS
+Federated DBS
+Knowledge Base
+Operational DBS
+SQL DBS
+NoSQL DBS
+Spartial DBS
+Unstructured DBS
 
+Data Normalization:
+In short, data normalization is a process used to reduce or eliminate the redundancy of data in a database
+First Normal Form (1NF)
+Data is considered 1NF when it contains no repeating groups of data in the database structure
+
+Second and Third Normal form (2NF and 3NF)
+Data can be even further normalized in 2NF and 3NF, by building on work done earlier in 1NF normalization. 
+The objective is to reduce storage, increase referential intergrity and logically structure data so that it is easy to see relationships among the structures. 
+
+Indexes, Relationships and Keys:
+What is an Index?
+An index (in database terms), is an internal structure thaat improves the speed of the data retrieval on a database table.
+Although the speed of those operations is greatly improved with the right index applied to your data, it does come at the cost of additional writes to storage space within your data structure.
+
+What are data relationships?
+A data relationship is defined by the sxistence of one field of data that exists in multiple tables.
+
+What are keys?
+Since each database consists of tables and each table consists of rows of information and each row designates a single record, keys help you keep all of those records "straight".
+There are multiple types of keys:
+  - Primary key: The most common type of key, should be unique for each record in that table. Each employee would have an employee ID, that ID can be defined as a primary key since no two employees will have the same ID.
+  - Foreign Key: These are used to create relationships between tables in your database. 

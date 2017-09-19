@@ -1,1 +1,12 @@
+### Install Postgres debian ###
+apt install postgresql-contrib postgresql
+su - postgres
+psql
+\password postgres
+CREATE EXTENSION adminpack;
+\q
+systemctl enable postgresql
+### Installation end ###
+
+
 
